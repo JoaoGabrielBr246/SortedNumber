@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300&family=Roboto+Condensed:wght@500&display=swap");
+
+:root {
+  --primary-color: #0a0f0d;
+  --secondary-color: #f6f6f6;
+  --button-color: #2a1e5c;
+  --result-color: #3cbbb1;
+
+  --primary-font: "Poppins", sans-serif;
+  --secondary-font: "Montserrat", sans-serif;
+  --result-font: "Roboto Condensed", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+main.page {
+  flex: 1;
+}
+
+.page {
+  margin: 5% 15%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.page__title {
+  color: var(--secondary-color);
+  font-family: var(--primary-font);
+}
+
+.page__title__sub {
+  color: var(--secondary-color);
+  font-family: var(--secondary-font);
+}
+
+.page__input {
+  width: 50%;
+  border-radius: 16px;
+  padding: 10px 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.page__button {
+  border-radius: 16px;
+  background: var(--button-color);
+  padding: 16px 24px;
+  width: 100%;
+  font-size: 24px;
+  font-weight: 700;
+  border: none;
+  color: var(--secondary-color);
+  margin-top: 2rem;
+  font-family: var(--secondary-font);
+}
+
+.page__show {
+  color: var(--result-color);
+  font-size: 100px;
+  font-family: var(--result-font);
+}
+
+.rodape {
+  width: 100%;
+  background-color: #ee4266;
+  text-align: center;
+  font-size: 30px;
+  padding: 30px 0;
+  font-family: var(--secondary-font);
+}
+
+@media (max-width: 600px) {
+  .page {
+    margin: 10% 5%;
+  }
+
+  .page__input {
+    width: 80%;
+  }
+
+  .page__button {
+    width: 80%;
+  }
+
+  .page__show {
+    font-size: 50px;
+  }
+
+  .rodape {
+    padding: 15px 0;
+    font-size: 20px;
+  }
+}

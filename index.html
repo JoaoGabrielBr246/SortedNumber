@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteador de número</title>
+    <link rel="stylesheet" href="style/estilo.css">
+</head>
+<body>
+    <header></header>
+    <main class="page">
+        <h1 class="page__title">Sorteador de número</h1>
+        <h2 class="page__title__sub">Digite o número máximo para ser sorteado: </h2>
+        <input type="number" class="page__input">
+        <button onclick="gerarNum()" id="sortear" class="page__button">Sortear!</button>
+        <button onclick="reset()" id="novoSorteio" class="page__button">Novo sorteio</button>
+        <h1 class="page__show" id="showNumber">0</h1>
+    </main>
+    <footer class="rodape">Desenvolvido por João Gabriel - Projeto ONE T6</footer>
+
+    <script src="script/app.js"></script>
+</body>
+</html>
